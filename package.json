@@ -1,0 +1,22 @@
+{
+  "name": "ps-lib-app",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && ts-node-dev --transpile-only --no-notify --exit-child src/app.ts",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test-server": "cd server && npm run test",
+    "test-client": "cd client && npm run test"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "sass": "^1.50.0"
+  }
+}

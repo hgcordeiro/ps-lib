@@ -5,7 +5,7 @@ The app consists of a frontend using React and a backend with Node.js.
 ## Installing dependencies
 ```npm install && cd client && npm install && cd ../server && npm install && cd ..```
 
-Create a .env file based on .env.example
+Create a ```.env``` file based on ```.env.example``` file
 
 ## Running the app (server and client)
 ```npm run dev```

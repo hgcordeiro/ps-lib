@@ -109,12 +109,12 @@ export const updateGame = ({
       const updatedGame = {
         id: game.id,
         slug: game.slug,
-        name,
-        platform, 
+        name: name || game.name,
+        platform,
         genre, 
         releaseDate, 
-        numOfPlayers, 
-        publisher, 
+        numOfPlayers: numOfPlayers || game.numOfPlayers, 
+        publisher: publisher || game.publisher, 
         boxArt
       }
       return updatedGame;
